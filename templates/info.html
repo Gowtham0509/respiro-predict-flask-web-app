@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespiroPredict</title>
+    <link rel="stylesheet" href="./static/info.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <h1 id="toheader">RespiroPredict: Navigating Respiratory Well-being</h1>
+    </header>
+    <section class="banner" id="welcome">
+        <img src="./static/images/main-banner.jpg" alt="Welcome to this Website">
+        <div class="welcome" >
+            <h2>Breathe Easy:<br/> Predicting Respiratory Health</h2>
+        </div>
+    </section>
+    <nav class="info-nav">
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Go To Prediction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Welcome to our Respiratory Imbalance Prediction Website! </h2>
+            <p>
+                Our platform is designed to provide valuable insights into your respiratory health. By analyzing various factors and data points, we can help predict potential respiratory imbalances and offer suggestions for maintaining healthy lungs and airways. Whether you're a healthcare professional, someone with respiratory concerns, or simply looking to monitor your lung health, our website is here to assist you.
+            </p>
+            <p>Imagine having the ability to predict potential respiratory imbalances even before they manifest as noticeable symptoms. Our state-of-the-art predictive models leverage cutting-edge technology to analyze your health data, historical information, and lifestyle factors. This empowers you with the knowledge needed to address concerns proactively.</p>
+            <p>
+                Whether you're a healthcare professional seeking to offer advanced predictions to your patients or an individual looking to enhance your personal health journey, our platform is designed with you in mind. We bridge the gap between technology and health, ensuring that every user gains valuable insights into their respiratory health.
+            </p>
+        </article><br />
+        <div class="feature-container" id="features">
+            <h2>Explore Our Key Features</h2><br/>
+            <div class="feature">
+                <h3>Personalized Predictions</h3>
+                <p>Get accurate predictions about your respiratory health based on your medical history and results.</p>
+            </div>
+            <div class="feature">
+                <h3>User-Friendly Interface</h3>
+                <p>Enjoy a seamless experience with our intuitive and user-friendly interface designed for easy navigation.</p>
+            </div>
+            <div class="feature">
+                <h3>Data-driven Insights</h3>
+                <p>Access meaningful insights derived from advanced data analysis to understand your respiratory well-being.</p>
+           </div>
+    </div><br>
+    <section class="more-info" id="about">
+        <h2>About Us</h2>
+        <p>
+            At RespiroPredict, we're on a mission to empower individuals and healthcare professionals with predictive insights into respiratory health. Our team of experts is dedicated to merging cutting-edge technology with medical knowledge to provide you with accurate and actionable information.
+        </p>
+        <p>
+            Our platform is the result of research and development, combining advanced data analysis techniques with respiratory health expertise. We believe that by proactively addressing potential imbalances, we can contribute to a healthier future for everyone.
+        </p>
+        <p>
+            Whether you're managing a respiratory condition or simply curious about your lung health, our platform is here to support you. Join us in this journey to harness the power of data and knowledge to enhance your well-being.
+        </p>
+        <p>
+            Feel free to reach out to us with any questions, feedback, or collaboration opportunities. We're excited to have you as part of the RespiraHealth community.
+        </p>
+        <h3>Contact Us</h3>
+        <p>If you have any inquiries, please don't hesitate to contact us:</p>
+            <h2>Email: <a href="mailto:mailtomrmatrix@gmail.com">mailtomrmatrix@gmail.com</a></h2>
+    </section>
+    </main>
+    
+    <footer>
+        <h3 class="copyright">Copyright&copy 2023 RespiroPredict</h3>
+    </footer>
+</body>
+</html>

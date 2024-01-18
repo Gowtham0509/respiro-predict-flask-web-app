@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles2.css">
+    <title>Predicting Level of Respiratory Imbalance</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="/static/validate1.js"></script>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="{{ url_for('index') }}">Prediction</a></li>
+      <li class="logout"><a  href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+  </nav>
+     <div class="form">
+        <div class="form-panel one">
+          <div class="form-header">
+            <h1>Your Test Report</h1>
+          </div><br>
+          <div class="form-header">
+            <h2>Welcome {{user}},</h2>
+          </div>
+          <div class="form-content">
+            <form name="form1" >
+              <p> Your level of Respiratory Imbalance is :</p>  
+              <img src="data:image/png;base64,{{ prediction_img }}" alt="My Plot">
+              <br><br>
+              <p>{{prediction_text}}</p>
+              <div class="plots">
+              <p style="text-align: center;"><em>Scatter plot</em></p><br>
+              <img src="data:image/png;base64,{{ plot_data }}" alt="My Plot">
+              <br><br>
+              <img src="data:image/png;base64,{{ bar_data }}" alt="My Plot">
+              <br><br>
+              <img src="data:image/png;base64,{{ heart_rate_data }}" alt="My Plot">
+              <br><br>
+              <p style="text-align: center;"><em>Word Cloud based on frequency of severity on overall patients</em></p><br>
+              <img src="data:image/png;base64,{{ wordcloud_data }}" alt="My Plot">
+            </div>
+            </form>
+			 
+          </div>
+        </div>
+    </div>
+</body>
+</html>
