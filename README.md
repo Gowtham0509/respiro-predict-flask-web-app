@@ -26,7 +26,7 @@ Visualization Tools
 
 To get started with this project, follow these steps:
 
-Clone the repository
+- Clone the repository
 
 - [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas) for database setup
 
